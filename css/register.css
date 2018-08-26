@@ -1,0 +1,44 @@
+.registerContent .inputBar{
+    background-color: white;
+    padding-left: 0.14rem;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+}
+
+.registerContent .inputBar input[type="text"]{
+    width: 100%;
+    height: 0.4rem;
+    padding: 0.05rem 0.12rem;
+    font-size: 0.14rem;
+    color: #666;
+    border: 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+
+.registerContent .btnDiv{
+    padding: 0 0.15rem;
+}
+
+.registerContent .loginBtn{
+    background-color: #FD9E30;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    margin-top: 0.2rem;
+    padding: 0.1rem 0;
+    color: white;
+    font-size: 0.16rem;
+    font-weight: bold;
+}
+
+.registerContent .inputBar .btn{
+    border-radius: 0;
+    width: 0.8rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 0.05rem;
+    right: 0.1rem;
+    font-size: 0.12rem;
+    padding: 0;
+}

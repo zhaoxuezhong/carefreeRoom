@@ -1,0 +1,250 @@
+section{
+    background-color: #F5F5F5;
+}
+#one_top {
+    position: relative;
+}
+
+#index-form{
+    margin: 0 0.2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0.08rem;
+    box-shadow: 0 4px 5px -3px #aaa;;
+}
+
+#index-form .index_input{
+    box-shadow: inset 0 2px 5px 0 #aaa;
+    display: table;
+    border-collapse: separate;
+    padding: 5px;
+    height: 0.32rem;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#index-form .index_input p,#index-form .index_input input{
+    display: table-cell;
+}
+
+#index-form .index_input p{
+    width: 1%;
+}
+
+#index-form .index_input p img{
+    width: 0.2rem;
+    margin: 0 5px 0 10px;
+}
+
+#index-form .index_input input{
+    border: 0;
+    outline: none;
+    font-size: 0.14rem;
+    width: 100%;
+    height: 0.28rem;
+    color: #B4B4B4;
+}
+
+#one_menu{
+    background-color: #FF8C06;
+}
+
+#one_menu .row .col-xs-3{
+    margin-top: 0.2rem;
+}
+
+#one_menu .row p{
+    color: white;
+    font-size: 0.14rem;
+    line-height: 0.28rem;
+}
+
+.big_img{
+    margin: 0.15rem 0;
+}
+
+.hotHouse{
+    background-color: white;
+}
+
+.hotHouse .hotHouse_title{
+    background-color: #FF8C06;
+    color: white;
+    padding: 0.08rem 0.15rem;
+    margin: 0 -15px;
+}
+.hotHouse .hotHouse_title h4{
+    margin: 0;
+    font-size: 0.18rem;
+}
+
+.hotHouse .hotHouse_title span{
+    font-size: 0.12rem;
+    margin: 0;
+}
+.hotHouse .row{
+    padding: 0 15px;
+}
+
+.hotHouse .row .item{
+    padding: 0.15rem 0;
+    color: #000;
+}
+
+.hotHouse .row hr{
+    width: 100%;
+    border-color: #FF8C06;
+}
+
+.hotHouse .row .item .col-xs-4{
+    padding-left: 0;
+}
+
+.hotHouse .row .item .col-xs-8{
+    padding: 0;
+}
+
+.hotHouse .row .item .col-xs-8 h4{
+    font-size: 0.16rem;
+}
+
+.hotHouse .row .item .col-xs-8 .type{
+    font-size: 0.14rem;
+    margin: 0.08rem 0;
+}
+
+.hotHouse .row .item .col-xs-8 .type span{
+    color: #FF8C06;
+    font-weight: bold;
+}
+
+
+.hotHouse .row .item .col-xs-8 .address{
+    color: #666;
+    font-size: 0.12rem;
+    margin: 0.08rem 0;
+}
+
+.hotHouse .row .item .col-xs-8 .biaoqian span{
+    background-color: #F3F7F8;
+    color: #94A0AC;
+    margin: 0.08rem 0;
+    font-size: 0.12rem;
+}
+
+.links{
+    background-color: white;
+    margin: 10px 0;
+}
+
+
+#myTab{
+    border-bottom: 1px solid #FE8900;
+}
+
+#myTab li{
+    padding: 0.15rem;
+}
+
+#myTab li a{
+    color: #9B9B9B;
+    font-size: 0.18rem;
+    font-weight: bold;
+}
+
+#myTab li.active{
+    border-bottom: 2px solid #FF8C06;
+}
+
+#myTab li.active>a{
+    color: #FF8C06;
+}
+
+#hot .row,#linkList .row{
+    margin: 20px 0;
+}
+
+#hot .row a.col-xs-6,#linkList .row a.col-xs-6{
+    margin: 0.06rem 0;
+    font-size: 0.14rem;
+    color: #666666;
+}
+
+.download{
+    height: 0.5rem;
+    display: flex;
+}
+
+.download>div:first-of-type{
+    flex: 2;
+    background-color: #000;
+    opacity: 0.6;
+    color: white;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.download>div:first-of-type div:first-of-type{
+    flex: 1;
+}
+
+.download>div:first-of-type div:last-of-type{
+    flex: 4;
+    padding-left: 10px;
+}
+
+.download>div:first-of-type div:last-of-type h4{
+    font-size: 0.16rem;
+    margin-bottom: 0.06rem;
+}
+
+.download>div:first-of-type div:last-of-type p{
+    font-size: 0.12rem;
+}
+
+.download>div:last-of-type{
+    flex: 1;
+    background-color: #FF8C06;
+    text-align: center;
+}
+
+.download>a{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.download>a img{
+    width: 0.15rem;
+}
+
+.download>div:last-of-type h4{
+    font-size: 0.18rem;
+}
+
+.download>div:last-of-type a{
+    color: white;
+    font-size: 0.18rem;
+    line-height: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

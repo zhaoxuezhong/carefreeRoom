@@ -1,0 +1,120 @@
+body{
+    background-color: #F5F5F5;
+}
+
+section .top {
+    background: url("../images/my/bg1.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0.15rem;
+}
+
+section .top_login {
+    background: url("../images/my/bg2.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0.15rem;
+}
+
+section .top .icon{
+    float: right;
+    margin-right: 0.2rem;
+}
+
+section .top .icon a{
+    display: inline-block;
+    font-size: 0.14rem;
+    color: white;
+    margin: 0.1rem;
+    text-align: center;
+}
+
+section .top .icon img{
+    width: 0.18rem;
+    margin: 0.03rem 0;
+}
+
+section .logo{
+    clear: both;
+    text-align: center;
+}
+
+section .logo h1 img{
+    width: 0.65rem;
+    height: auto;
+    max-height: 1rem;
+    max-width: 1rem;
+    margin-top: 0.1rem;
+}
+
+section .top .logo .btn{
+    font-size: 0.18rem;
+    color: white;
+    padding: 0.03rem 0.2rem;
+    border: 0.012rem solid white;
+    background-color: unset;
+    margin: 0.15rem 0;
+    font-weight: bold;
+}
+
+section .logo p{
+    color: white;
+    font-size: 0.14rem;
+    margin: 0.2rem 0;
+}
+
+section ul{
+    background-color: white;
+}
+
+section ul li{
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+}
+
+section ul li>p:first-of-type{
+    display: table-cell;
+    width: 1%;
+    padding: 0.16rem 0.1rem 0.16rem 0.15rem;
+}
+
+section ul li>p:first-of-type img{
+    width: 0.18rem;
+}
+
+section ul li>p:last-of-type{
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0.16rem 0.16rem 0.16rem 0;
+}
+
+section ul li>p:last-of-type span{
+    font-size: 0.16rem;
+    float: left;
+}
+
+section ul li>p:last-of-type img{
+    float: right;
+    width: 0.06rem;
+}
+
+section ul li:last-of-type>p:last-of-type{
+    border: 0;
+}
+
+section .logOut{
+    padding: 0 0.15rem;
+}
+
+section .logOut .logOut_btn{
+    background-color: white;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    margin-top: 0.2rem;
+    padding: 0.08rem 0;
+    color: #FF8C06;
+    font-size: 0.16rem;
+}
+

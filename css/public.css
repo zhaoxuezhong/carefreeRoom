@@ -1,0 +1,119 @@
+html{
+    font-size: 100px;
+}
+
+header{
+    height: 0.42rem;
+    background-color: #ff8a00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+header .header_logo{
+    width: 1.2rem;
+    height: 0.34rem;
+    display: table;
+}
+
+header .header_logo>a.logo2{
+    display: table-cell;
+}
+
+header .header_logo>a.logo2 img{
+    width: 0.7rem;
+    height: auto;
+}
+
+header .header_logo>a.logo1 img{
+    width: 1rem;
+    height: 0.34rem;
+}
+
+header .icon{
+    font-size: 0;
+}
+
+header .dropdown{
+    display: table-cell;
+}
+
+header .dropdown .dropdown-toggle{
+    font-size: 0.13rem;
+    color: white;
+}
+
+header .icon img{
+    width: 0.23rem;
+    height: 0.29rem;
+    margin-left: 0.1rem;
+}
+
+
+footer {
+    height: 1.6rem;
+    background-color: #2f3130;
+    padding: 0 15px;
+}
+
+footer>nav{
+    color: #8E908F;
+    border-bottom: 1px solid #3D3F3E;
+    display: table;
+    width: 100%;
+}
+
+footer>nav p,footer nav p a{
+    font-size: 0.13rem;
+    color: #8E908F;
+    font-weight: bold;
+}
+
+footer>nav p img{
+    height: 0.07rem;
+    width: auto;
+}
+
+footer>div{
+    color: #8E908F;
+    font-size: 0.12rem;
+}
+
+footer>div .app{
+    overflow: hidden;
+    margin: 0.15rem 0;
+}
+
+footer>div .app>div,footer>div .app div:last-of-type{
+    padding: 0;
+}
+
+div .app>div div:first-of-type{
+    padding: 0 0.05rem;
+}
+
+footer>div ul>li:last-of-type p{
+    line-height: 0.2rem;
+}
+footer>div ul>li:last-of-type p:last-of-type{
+    font-size: 0.09rem;
+}
+
+
+/*面包屑导航*/
+section .bread_crumb{
+    background-color: white;
+    padding: 0 0.15rem;
+    line-height: 0.35rem;
+    border-bottom: 1px solid #eee;
+}
+
+section .bread_crumb span{
+    font-size: 0.14rem;
+}
+
+section .bread_crumb img{
+    height: 0.35rem;
+}
+

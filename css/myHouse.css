@@ -1,0 +1,52 @@
+.myHouse{
+    background-color: white;
+}
+.myHouse .row{
+    padding: 0 15px;
+}
+
+.myHouse .row .item{
+    padding: 0.15rem 0;
+    color: #000;
+}
+
+.myHouse .row hr{
+    width: 100%;
+    border-color: #FF8C06;
+}
+
+.myHouse .row .item .col-xs-4{
+    padding: 0;
+}
+
+.myHouse .row .item .col-xs-8{
+    padding-right: 0;
+}
+
+.myHouse .row .item .col-xs-8 h4{
+    font-size: 0.16rem;
+}
+
+.myHouse .row .item .col-xs-8 .type{
+    font-size: 0.12rem;
+    margin: 0.05rem 0;
+    color: #666;
+}
+
+.myHouse .row .item .col-xs-8 .type span{
+    color: #FF8C06;
+    font-weight: bold;
+    font-size: 0.16rem;
+}
+
+
+.myHouse .row .item .col-xs-8 .address{
+    color: #666;
+    font-size: 0.12rem;
+    margin: 0.05rem 0;
+}
+
+.myHouse .row .item .col-xs-8 .biaoqian span{
+    color: #666;
+    font-size: 0.12rem;
+}

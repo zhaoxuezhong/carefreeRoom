@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>找房无忧-二手房列表 </title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../js/fontsize.js"></script>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/secondHandList.css">
+    <script src="../js/zepto.js"></script>
+    <script src="../js/localJs/secondHandList.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="#" class="logo2"><img src="../images/my/logo_2.jpg"/></a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                北京 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">jmeter</a></li>
+                <li><a href="#">EJB</a></li>
+                <li class="divider"></li>
+                <li><a href="#">分离的链接</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="../images/index/my.jpg"/></a>
+        <a href="javascript:void(0)" id="downloadBtn"><img src="../images/index/xiazai.jpg"/></a>
+    </div>
+</header>
+<section>
+    <div class="searchBar">
+        <form class="" action="#" method="post">
+            <div class="searchDiv">
+                <input type="search" placeholder="请输入小区或商区名称"/>
+                <a href="#">
+                    <img src="../images/SecondHandList/search_03.png"/>
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="secondHandList">
+        <div class="condition">
+            <ul id="myTab">
+                <li class="list_toggle">
+                    <a class="toggle" data-toggle="tab" href="#region">
+                        区域
+                    </a>
+                </li>
+                <li class="list_toggle">
+                    <a class="toggle" data-toggle="tab" href="#price">
+                        价格</a>
+                </li>
+                <li class="list_toggle">
+                    <a class="toggle" data-toggle="tab" href="#layout">
+                        房型</a>
+                </li>
+                <li class="list_toggle">
+                    <a class="toggle" data-toggle="tab" href="#more">
+                        更多</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane" id="region">
+                    <ul class="tab">
+                        <li class="active">
+                            <a href="#region1" data-toggle="tab">
+                                区域
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#region2" data-toggle="tab">
+                                地铁
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tabContent tab-content">
+                        <div class="tab-pane fade in active" id="region1">
+                            <div class="row">
+                                <ul class="col-xs-4">
+                                    <li style="border-bottom: 0"><a href="#">附近</a></li>
+                                    <li class="active"><a href="#">不限</a></li>
+                                    <li><a href="#">朝阳</a></li>
+                                    <li><a href="#">海淀</a></li>
+                                    <li><a href="#">昌平</a></li>
+                                    <li><a href="#">丰台</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                </ul>
+                                <ul class="col-xs-8">
+                                    <li class="active" style="border-bottom: 0"><a href="#">不限</a></li>
+                                    <li><a href="#">安贞</a></li>
+                                    <li><a href="#">海淀</a></li>
+                                    <li><a href="#">昌平</a></li>
+                                    <li><a href="#">丰台</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="region2">
+                            <div class="row">
+                                <ul class="col-xs-4">
+                                    <li style="border-bottom: 0"><a href="#">附近</a></li>
+                                    <li><a href="#">不限</a></li>
+                                    <li class="active"><a href="#">朝阳</a></li>
+                                    <li><a href="#">海淀</a></li>
+                                    <li><a href="#">昌平</a></li>
+                                    <li><a href="#">丰台</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                </ul>
+                                <ul class="col-xs-8">
+                                    <li class="active" style="border-bottom: 0"><a href="#">不限</a></li>
+                                    <li><a href="#">安贞</a></li>
+                                    <li><a href="#">海淀</a></li>
+                                    <li><a href="#">昌平</a></li>
+                                    <li><a href="#">丰台</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="price">
+                    <form action="#" method="post">
+                        <ul>
+                            <li><a href="#">不限</a></li>
+                            <li class="active"><a href="#">100万以下</a></li>
+                            <li><a href="#">100万-150万</a></li>
+                            <li><a href="#">150万-200万</a></li>
+                            <li><a href="#">200万-250万</a></li>
+                            <li><a href="#">250万-300万</a></li>
+                        </ul>
+                        <div class="priceInput">
+                            <span>自定义价格</span>
+                            <input type="number" placeholder="最小"/> - <input type="number" placeholder="最大"/>
+                            <button class="btn btn-warning btn-xs">确定</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="layout">
+                    <ul class="typeList">
+                        <li class="active"><a href="#">不限</a></li>
+                        <li><span>1室</span><span class="checkboxs"></span></li>
+                        <li class="active"><span>2室</span><span class="checkboxs"></span></li>
+                        <li><span>3室</span><span class="checkboxs"></span></li>
+                        <li><span>4室</span><span class="checkboxs"></span></li>
+                        <li><span>5室</span><span class="checkboxs"></span></li>
+                    </ul>
+                    <button class="btn">确定</button>
+                </div>
+                <div class="tab-pane " id="more">
+                    <ul>
+                        <li>
+                            <h4>区域</h4>
+                            <div class="row">
+                                <p class="col-xs-3 active"><span>南</span></p>
+                                <p class="col-xs-3"><span>南北</span></p>
+                                <p class="col-xs-3"><span>东</span></p>
+                                <p class="col-xs-3"><span>西</span></p>
+                                <p class="col-xs-3"><span>北</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>面积</h4>
+                            <div class="row">
+                                <p class="col-xs-3"><span>50以下</span></p>
+                                <p class="col-xs-3"><span>50-70</span></p>
+                                <p class="col-xs-3"><span>70-90</span></p>
+                                <p class="col-xs-3"><span>90-110</span></p>
+                                <p class="col-xs-3"><span>110-130</span></p>
+                                <p class="col-xs-3"><span>130-150</span></p>
+                                <p class="col-xs-3"><span>150-200</span></p>
+                                <p class="col-xs-3"><span>200以上</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>标签</h4>
+                            <div class="row">
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                                <p class="col-xs-3"><span>学区房</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>楼龄</h4>
+                            <div class="row">
+                                <p class="col-xs-3"><span>5年以内</span></p>
+                                <p class="col-xs-3"><span>5年以内</span></p>
+                                <p class="col-xs-3"><span>5年以内</span></p>
+                                <p class="col-xs-3"><span>5年以内</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>楼层</h4>
+                            <div class="row">
+                                <p class="col-xs-3"><span>低楼层</span></p>
+                                <p class="col-xs-3"><span>中楼层</span></p>
+                                <p class="col-xs-3"><span>高楼层</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#">清空条件</a>
+                        <button class="btn">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="houseList" class="container">
+            <div class="row">
+                <div class="col-xs-12 item">
+                    <div class="col-xs-4">
+                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img1.png" class="img-responsive"/></a>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4><a href="secondHandDetail.html">辉煌国际</a></h4>
+                        <div class="address">
+                            南北 高楼层/6层
+                        </div>
+                        <div class="price">
+                            签约价格:<span>13244元/平</span> <span class="pull-right">37050万</span>
+                        </div>
+                        <div class="time">
+                            <span>签约日期:2015年11月10日</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-xs-12  item">
+                    <div class="col-xs-4">
+                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img2.png" class="img-responsive"/></a>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4><a href="secondHandDetail.html">辉煌国际</a></h4>
+                        <div class="address">
+                            南北 高楼层/6层
+                        </div>
+                        <div class="price">
+                            签约价格:<span>13244元/平</span> <span class="pull-right">37050万</span>
+                        </div>
+                        <div class="time">
+                            <span>签约日期:2015年11月10日</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-xs-12 item">
+                    <div class="col-xs-4">
+                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img3.png" class="img-responsive"/></a>
+                    </div>
+                    <div class="col-xs-8">
+                        <h4><a href="secondHandDetail.html">辉煌国际</a></h4>
+                        <div class="address">
+                            南北 高楼层/6层
+                        </div>
+                        <div class="price">
+                            签约价格:<span>13244元/平</span> <span class="pull-right">37050万</span>
+                        </div>
+                        <div class="time">
+                            <span>签约日期:2015年11月10日</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div id="shade"></div>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav>
+        <p class="navbar-text">
+            北京找房无忧网
+            <img src="../images/my/right.png" height="29" width="14"/>
+            <a href="#">首页</a>
+        </p>
+    </nav>
+    <div>
+        <ul>
+            <li class="app">
+                <div class="col-xs-3 col-xs-push-2">
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <img src="../images/index/apple.png" class="img-responsive"/>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <p>iphone</p>
+                        <p>客户端</p>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-xs-push-4">
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <img src="../images/index/android.png" class="img-responsive"/>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <p>Android</p>
+                        <p>客户端</p>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <p>北京找房无忧房地产经纪有限公司</p>
+                <p>网络经营许可证 京ICP备20160812号-12</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

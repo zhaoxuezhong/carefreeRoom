@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>找房无忧-登陆 </title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../js/fontsize.js"></script>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+<header>
+    <div class="header_logo">
+        <a href="#" class="logo2"><img src="../images/my/logo_2.jpg"/></a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                北京 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">jmeter</a></li>
+                <li><a href="#">EJB</a></li>
+                <li class="divider"></li>
+                <li><a href="#">分离的链接</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="icon">
+        <a href="#" ><img src="../images/index/my.jpg"/></a>
+        <a href="javascript:void(0)" id="downloadBtn"><img src="../images/index/xiazai.jpg"/></a>
+    </div>
+</header>
+<section>
+    <div class="bread_crumb">
+        <span>首页</span>
+        <img src="../images/my/gt.jpg"/>
+        <span>我的</span>
+        <img src="../images/my/gt.jpg"/>
+        <span>登录</span>
+    </div>
+    <div class="loginContent">
+        <ul id="myTab" class="row text-center">
+            <li class="active col-xs-6">
+                <a href="#loginBar" data-toggle="tab" aria-expanded="true">普通登录</a>
+            </li>
+            <li class="col-xs-6">
+                <a href="#loginByCode" data-toggle="tab" aria-expanded="false">验证码快捷登录</a>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="loginBar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <form action="myLogin.html" method="post" role="form">
+                            <div class="inputBar">
+                                <input type="text" placeholder="请输入手机号码">
+                                <input type="text" placeholder="请输入密码">
+                            </div>
+                            <div class="btnDiv">
+                                <button type="submit" class="loginBtn" >立即登录</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="loginByCode">
+                <div class="container-fluid">
+                    <div class="row">
+                        <form action="myLogin.html" method="post" role="form">
+                            <div class="inputBar">
+                                <input type="text" placeholder="请输入手机号码">
+                                <input type="button" class="btn btn-default" value="发送验证码"/>
+                                <input type="text" placeholder="请输入短信中的验证码">
+                            </div>
+                            <div class="btnDiv">
+                                <button type="submit" class="loginBtn" readonly="true">验证并登录</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <a href="register.html" class="pull-left">立即注册</a>
+                <a href="findPassword.html" class="pull-right">忘记密码</a>
+            </div>
+        </div>
+</section>
+</body>
+</html>
