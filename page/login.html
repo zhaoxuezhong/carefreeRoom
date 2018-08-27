@@ -6,11 +6,12 @@
     <title>找房无忧-登陆 </title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/login.css">
     <script src="../js/jquery-1.12.4.js"></script>
     <script src="../bootstrap/js/bootstrap.js"></script>
     <script src="../js/fontsize.js"></script>
-    <link rel="stylesheet" href="../css/public.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/zepto.js"></script>
 
 </head>
 <body>
@@ -73,7 +74,7 @@
                         <form action="myLogin.html" method="post" role="form">
                             <div class="inputBar">
                                 <input type="text" placeholder="请输入手机号码">
-                                <input type="button" class="btn btn-default" value="发送验证码"/>
+                                <button type="button" id="chongfa" class="btn btn-default" data-loading-text="(50s)重发">发送验证码</button>
                                 <input type="text" placeholder="请输入短信中的验证码">
                             </div>
                             <div class="btnDiv">
@@ -89,6 +90,26 @@
                 <a href="findPassword.html" class="pull-right">忘记密码</a>
             </div>
         </div>
+    </div>
 </section>
+<script>
+    document.getElementById("chongfa").onclick=function () {
+        timeCount(50);
+        document.getElementById("chongfa").disabled=true;
+    };
+
+    function timeCount(time) {
+        if(time===0){
+            $("#chongfa").text("重发");
+            time=50;
+            document.getElementById("chongfa").disabled=false;
+        }else{
+            $("#chongfa").text("("+time+"s)重发");
+            time--;
+            setTimeout("timeCount("+time+")",1000);
+        }
+    }
+
+</script>
 </body>
 </html>
