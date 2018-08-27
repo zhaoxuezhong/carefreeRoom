@@ -6,7 +6,6 @@
     <title>找房无忧-二手房列表 </title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/reset.css">
-
     <script src="../js/jquery-1.12.4.js"></script>
     <script src="../bootstrap/js/bootstrap.js"></script>
     <script src="../js/fontsize.js"></script>
@@ -20,6 +19,7 @@
 <header>
     <div class="header_logo">
         <a href="#" class="logo2"><img src="../images/my/logo_2.jpg"/></a>
+
         <div class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 北京 <b class="caret"></b>
@@ -89,21 +89,30 @@
                             <div class="row">
                                 <ul class="col-xs-4">
                                     <li style="border-bottom: 0"><a href="#">附近</a></li>
-                                    <li class="active"><a href="#">不限</a></li>
-                                    <li><a href="#">朝阳</a></li>
+                                    <li><a href="#">不限</a></li>
+                                    <li class="active"><a href="#">朝阳</a></li>
                                     <li><a href="#">海淀</a></li>
                                     <li><a href="#">昌平</a></li>
                                     <li><a href="#">丰台</a></li>
                                     <li><a href="#">石景山</a></li>
                                 </ul>
                                 <ul class="col-xs-8">
-                                    <li class="active" style="border-bottom: 0"><a href="#">不限</a></li>
-                                    <li><a href="#">安贞</a></li>
+                                    <li style="border-bottom: 0"><a href="#">不限</a></li>
+                                    <li class="active"><a href="#">安贞</a></li>
                                     <li><a href="#">海淀</a></li>
                                     <li><a href="#">昌平</a></li>
                                     <li><a href="#">丰台</a></li>
                                     <li><a href="#">石景山</a></li>
                                     <li><a href="#">石景山</a></li>
+                                </ul>
+                                <ul class="col-xs-8" style="display: none">
+                                    <li style="border-bottom: 0"><a href="#">不限</a></li>
+                                    <li class="active"><a href="#">安贞2</a></li>
+                                    <li><a href="#">海淀2</a></li>
+                                    <li><a href="#">昌平2</a></li>
+                                    <li><a href="#">丰台2</a></li>
+                                    <li><a href="#">石景山2</a></li>
+                                    <li><a href="#">石景山2</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -119,6 +128,15 @@
                                     <li><a href="#">石景山</a></li>
                                 </ul>
                                 <ul class="col-xs-8">
+                                    <li class="active" style="border-bottom: 0"><a href="#">不限</a></li>
+                                    <li><a href="#">安贞</a></li>
+                                    <li><a href="#">海淀</a></li>
+                                    <li><a href="#">昌平</a></li>
+                                    <li><a href="#">丰台</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                    <li><a href="#">石景山</a></li>
+                                </ul>
+                                <ul class="col-xs-8" style="display: none">
                                     <li class="active" style="border-bottom: 0"><a href="#">不限</a></li>
                                     <li><a href="#">安贞</a></li>
                                     <li><a href="#">海淀</a></li>
@@ -163,55 +181,84 @@
                     <ul>
                         <li>
                             <h4>区域</h4>
+
                             <div class="row">
                                 <p class="col-xs-3 active"><span>南</span></p>
+
                                 <p class="col-xs-3"><span>南北</span></p>
+
                                 <p class="col-xs-3"><span>东</span></p>
+
                                 <p class="col-xs-3"><span>西</span></p>
+
                                 <p class="col-xs-3"><span>北</span></p>
                             </div>
                         </li>
                         <li>
                             <h4>面积</h4>
+
                             <div class="row">
                                 <p class="col-xs-3"><span>50以下</span></p>
+
                                 <p class="col-xs-3"><span>50-70</span></p>
+
                                 <p class="col-xs-3"><span>70-90</span></p>
+
                                 <p class="col-xs-3"><span>90-110</span></p>
+
                                 <p class="col-xs-3"><span>110-130</span></p>
+
                                 <p class="col-xs-3"><span>130-150</span></p>
+
                                 <p class="col-xs-3"><span>150-200</span></p>
+
                                 <p class="col-xs-3"><span>200以上</span></p>
                             </div>
                         </li>
                         <li>
                             <h4>标签</h4>
+
                             <div class="row">
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
+
                                 <p class="col-xs-3"><span>学区房</span></p>
                             </div>
                         </li>
                         <li>
                             <h4>楼龄</h4>
+
                             <div class="row">
                                 <p class="col-xs-3"><span>5年以内</span></p>
+
                                 <p class="col-xs-3"><span>5年以内</span></p>
+
                                 <p class="col-xs-3"><span>5年以内</span></p>
+
                                 <p class="col-xs-3"><span>5年以内</span></p>
                             </div>
                         </li>
                         <li>
                             <h4>楼层</h4>
+
                             <div class="row">
                                 <p class="col-xs-3"><span>低楼层</span></p>
+
                                 <p class="col-xs-3"><span>中楼层</span></p>
+
                                 <p class="col-xs-3"><span>高楼层</span></p>
                             </div>
                         </li>
@@ -227,10 +274,12 @@
             <div class="row">
                 <div class="col-xs-12 item">
                     <div class="col-xs-4">
-                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img1.png" class="img-responsive"/></a>
+                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img1.png"
+                                                             class="img-responsive"/></a>
                     </div>
                     <div class="col-xs-8">
                         <h4><a href="secondHandDetail.html">辉煌国际</a></h4>
+
                         <div class="address">
                             南北 高楼层/6层
                         </div>
@@ -245,10 +294,12 @@
                 <hr>
                 <div class="col-xs-12  item">
                     <div class="col-xs-4">
-                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img2.png" class="img-responsive"/></a>
+                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img2.png"
+                                                             class="img-responsive"/></a>
                     </div>
                     <div class="col-xs-8">
                         <h4><a href="secondHandDetail.html">辉煌国际</a></h4>
+
                         <div class="address">
                             南北 高楼层/6层
                         </div>
@@ -263,10 +314,12 @@
                 <hr>
                 <div class="col-xs-12 item">
                     <div class="col-xs-4">
-                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img3.png" class="img-responsive"/></a>
+                        <a href="secondHandDetail.html"><img src="../images/SecondHandList/img3.png"
+                                                             class="img-responsive"/></a>
                     </div>
                     <div class="col-xs-8">
                         <h4><a href="secondHandDetail.html">辉煌国际</a></h4>
+
                         <div class="address">
                             南北 高楼层/6层
                         </div>
@@ -279,7 +332,7 @@
                     </div>
                 </div>
             </div>
-                <div id="shade"></div>
+            <div id="shade"></div>
         </div>
     </div>
 </section>
@@ -302,6 +355,7 @@
                     </div>
                     <div class="col-xs-6">
                         <p>iphone</p>
+
                         <p>客户端</p>
                     </div>
                 </div>
@@ -313,12 +367,14 @@
                     </div>
                     <div class="col-xs-6">
                         <p>Android</p>
+
                         <p>客户端</p>
                     </div>
                 </div>
             </li>
             <li class="text-center">
                 <p>北京找房无忧房地产经纪有限公司</p>
+
                 <p>网络经营许可证 京ICP备20160812号-12</p>
             </li>
         </ul>

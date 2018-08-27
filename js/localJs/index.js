@@ -1,12 +1,12 @@
-$(function(){
+Zepto(function($){
 
-    $("#downloadBtn").on("click",function () {
-        $(".downloadBar").show();
+    $("#downloadBtn").on("tap",function () {
+        $(".downloadBar").css("display","block");
     });
 
 
-    $("#closeDownload").on("click",function () {
-        $(".downloadBar").hide();
+    $("#closeDownload").on("tap",function () {
+        $(".downloadBar").css("display","none");
     });
 
 });
