@@ -1,23 +1,159 @@
 section{
-    background-color: #F5F5F5;
+    overflow: hidden;
+    background-color: #f5f5f5;
 }
 
-section .contentBlock{
+.contentBlock{
+    margin-bottom: 0.15rem;
     background-color: white;
-    margin-bottom: 0.1rem;
+}
+
+#myCarousel{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#picList {
+    width: 16rem;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    transition: all 0.2s ease;
+}
+
+#picList img {
+    width: 3.2rem;
+    float: left;
+}
+
+#picBtns {
+    height: 0.3rem;
+    padding: 0.2rem 0;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 0.05rem;
+    width: 100%;
+}
+
+#picBtns span {
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: 0 0.05rem;
+    border: 1px solid white;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 0.15rem;
+    vertical-align: top;
+}
+
+#picBtns .active {
+    background: white;
+}
+
+#currentIndex{
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.1rem;
+    background-color: #000;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    padding: 0 0.1rem;
+    border-radius: 0.1rem;
+    font-size: 0.2rem;
+}
+
+#currentIndex span{
+    color: white;
+}
+
+.detailHeader{
+    padding: 0.15rem;
     overflow: hidden;
 }
 
-#picWrap{width:100%; overflow:hidden;}
-#picList{width:40rem;overflow:hidden;}
-#picList img{width:10rem;float:left;}
-#picBtns{height:0.3rem;padding:0.2rem 0;margin:0; text-align:center;}
-#picBtns span{width:0.3rem;height:0.3rem;margin:0 0.1rem; border:1px solid #000; display:inline-block; box-sizing:border-box; border-radius:0.15rem; vertical-align:top;}
-#picBtns .active{background:#f60;}
+.detailHeader h3{
+    font-size: 0.19rem;
+    color: #000000;
+    margin: 0.1rem 0;
+}
 
-#picList{
-    position: relative;
-    left: 0px;
-    transition: all 0.2s ease;
+.detailHeader p{
+    display: inline-block;
+}
+
+.detailHeader p:first-of-type{
+    color: #333;
+    overflow: hidden;
+    font-size: 0.14rem;
     width: 100%;
 }
+
+.detailHeader p:first-of-type img{
+    height: 0.2rem;
+}
+
+.detailHeader .price{
+    color: #DD4B3C;
+    font-size: 0.2rem;
+    font-weight: 800;
+    margin-right: 0.05rem;
+}
+
+.detailHeader p:nth-of-type(2){
+    color: #999;
+    font-size: 0.12rem;
+    margin: 0.1rem 0;
+}
+
+.detailHeader .biaoqian{
+    margin: 0.05rem 0;
+}
+
+#houseInfo div.container{
+    padding-right: 0;
+    color: #333333;
+}
+
+#houseInfo ul.row{
+    margin-left: 0.05rem;
+}
+
+#houseInfo li.col-xs-12{
+    border-bottom: 1px solid #eeeeee;
+    padding: 0;
+}
+
+#houseInfo li.col-xs-12 p.col-xs-6,#houseInfo li.col-xs-12 p.col-xs-12{
+    padding: 0.15rem 0;
+    font-size: 0.14rem;
+}
+
+#houseInfo li.col-xs-12 p.col-xs-6 span:first-of-type,
+#houseInfo li.col-xs-12 p.col-xs-12 span:first-of-type{
+    color: #aaa;
+}
+
+#houseInfo li.col-xs-12 p.col-xs-12 a{
+    position: absolute;
+    right: 0.3rem;
+    top: 0.15rem;
+}
+
+#houseInfo li.col-xs-12 p.col-xs-12 a img{
+    height: 0.12rem;
+}
+
+.houseInfoMore{
+    padding: 0.15rem 0;
+    font-size: 0.14rem;
+}
+
+.houseInfoMore a{
+    color: #999999;
+}
+
+
+

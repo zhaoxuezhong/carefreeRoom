@@ -1,52 +1,38 @@
 
-//±äÁ¿¶¨ÒåÇø
-//»ñµÃÈ«²¿µÄspan±êÇ©
-var spans = picBtns.getElementsByTagName("span");
-//±äÁ¿¶¨ÒåÇø
-var x = 0;//±£´æ¿ªÊ¼µÄxµÄ×ø±êÖµ
-var screenWidth = window.screen.availWidth;//Éè±¸ÆÁÄ»¿í¶È
+//å˜é‡å®šä¹‰åŒº
+var x = 0;//ä¿å­˜å¼€å§‹çš„xçš„åæ ‡å€¼
+var screenWidth = window.screen.availWidth;//è®¾å¤‡å±å¹•å®½åº¦
 var imgSize = picList.getElementsByTagName("img").length;
-var index = 0;//´ú±íµ±Ç°ÕıÔÚÏÔÊ¾µÄÊÇµÚ¼¸ÕÅÍ¼Æ¬
+var index = 0;//ä»£è¡¨å½“å‰æ­£åœ¨æ˜¾ç¤ºçš„æ˜¯ç¬¬å‡ å¼ å›¾ç‰‡
+//è·å¾—å…¨éƒ¨çš„spanæ ‡ç­¾
+var spans = picBtns.getElementsByTagName("span");
 
-//½«Ö¸¶¨µÄspan°´Å¥¸Ä±äÑùÊ½
-function change(index){
-    //½«È«²¿µÄspanÇå³ıÑùÊ½
-    for(var i = 0;i<spans.length;i++){
-        spans[i].className = "";
-    }
-    //½«Ö¸¶¨µÄspanÖ¸¶¨ÑùÊ½
-    spans[index].className = "active";
-}
-//´¥Ãş¿ªÊ¼
+//è§¦æ‘¸å¼€å§‹
 picList.addEventListener("touchstart",function(event){
-    var touch = event.changedTouches[0];
-    x = touch.pageX;
+    x = event.changedTouches[0].pageX;
 });
-//ÒÆ¶¯ÖĞ
+//ç§»åŠ¨ä¸­
 picList.addEventListener("touchmove",function(event){
-    var touch = event.changedTouches[0];
-    var diff = x - touch.pageX;
-    moveTo(-(diff+index*screenWidth));
+    moveTo(event.changedTouches[0].pageX-x-index*screenWidth);
 });
-//´¥Ãş½áÊø
+//è§¦æ‘¸ç»“æŸ
 picList.addEventListener("touchend",function(event){
-    var touch = event.changedTouches[0];
-    var diff = x - touch.pageX; // -50
+    var diff = event.changedTouches[0].pageX-x;
     if(Math.abs(diff)>screenWidth/2){
-        if(diff>0){
-            //1.Ïò×ó
+        if(diff<0){
+            //1.å‘å·¦
             index++;
             if(index>imgSize-1){
                 index = imgSize-1;
             }
         }else{
-            //2.ÏòÓÒ
+            //2.å‘å³
             index--;
             if(index<0){
                 index = 0;
             }
         }
-        //¸Ä±äĞ¡Ô²µãµÄÑùÊ½
+        //æ”¹å˜å°åœ†ç‚¹çš„æ ·å¼
         change(index);
     }
     moveTo(-index*screenWidth);
@@ -54,4 +40,24 @@ picList.addEventListener("touchend",function(event){
 
 function moveTo(distance){
     picList.style.left = distance+"px";
+    currentIndex.getElementsByTagName("span")[0].innerHTML=index+1;
 }
+
+//å°†æŒ‡å®šçš„spanæŒ‰é’®æ”¹å˜æ ·å¼
+function change(index){
+    //å°†å…¨éƒ¨çš„spanæ¸…é™¤æ ·å¼
+    for(var i = 0;i<spans.length;i++){
+        spans[i].className = "";
+    }
+    //å°†æŒ‡å®šçš„spanæŒ‡å®šæ ·å¼
+    spans[index].className = "active";
+}
+
+Zepto(function ($) {
+    $("#picBtns span").tap(function () {
+        index=$(this).index();
+        change(index);
+        moveTo(-index*screenWidth);
+    })
+
+});
