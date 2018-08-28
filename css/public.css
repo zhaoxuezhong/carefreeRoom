@@ -24,7 +24,6 @@ header .header_logo>a.logo2{
 header .header_logo>a.logo2 img{
     width: 0.7rem;
     height: auto;
-    vertical-align: unset;
 }
 
 header .header_logo>a.logo1 img{
@@ -118,11 +117,26 @@ section .bread_crumb img{
     height: 0.35rem;
 }
 
+.biaoqian,.biaoqian2{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
 
-.biaoqian span{
+.biaoqian span.label{
     background-color: #F3F7F8;
     color: #94A0AC;
-    margin: 0.08rem 0;
     font-size: 0.12rem;
+    display: inline-block;
+}
+
+.biaoqian2 span.label{
+    border: 1px solid #6CA717;
+    color: #6CA717;
+    background-color: transparent;
+    font-size: 0.12rem;
+    font-weight: unset;
+    display: inline-block;
+    margin-top: 0.01rem;
 }
 

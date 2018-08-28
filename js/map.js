@@ -29,3 +29,4 @@ function setCity(){
 }
 document.write(returnCitySN["cip"]+','+returnCitySN["cname"])
 search.search(returnCitySN["cname"]);
+userAddress.innerHTML=returnCitySN["cname"];

@@ -285,3 +285,56 @@ section {
     border-right: 0.09rem solid transparent;
     border-bottom: 0.09rem solid #F2F2F2;
 }
+
+#agent{
+    background-color: white;
+    padding: 0 0.15rem;
+    display: flex;
+    box-shadow: 0 -1px 10px -3px #555555;
+    height: 50px;
+    line-height: 50px;
+}
+
+#agent div.left{
+    flex: 2;
+    padding-right: 0.1rem;
+}
+
+#agent div.left button.btn{
+    width: 100%;
+    background-color: #FF8C06;
+    color: white;
+    font-size: 0.15rem;
+}
+
+#agent div.left button.btn img{
+    width: 0.25rem;
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+#agent div.right{
+    flex: 1;
+    text-align: center;
+}
+
+#agent div.right a img{
+    width: 0.25rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+#agent div.right a span{
+    font-size: 0.18rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 0.03rem;
+}
+
+
+
+
+
+
+

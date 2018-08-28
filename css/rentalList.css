@@ -38,7 +38,6 @@
 #myTab{
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-    padding: 0.1rem 0;
     display: flex;
 }
 
@@ -51,7 +50,7 @@
     position: relative;
     z-index: 100;
     display: block;
-    padding: 0.05rem 0.13rem 0.05rem 0;
+    padding: 0.15rem 0.13rem 0.15rem 0;
     font-size: 0.14rem;
     border-left: 1px solid #eeeeee;
 }
@@ -326,7 +325,7 @@
 }
 
 #houseList .row{
-    padding: 0 15px;
+    padding: 0 0.15rem;
 }
 
 #houseList .row .item{
@@ -348,30 +347,30 @@
 }
 
 #houseList .row .item .col-xs-8 h4 a{
-    font-size: 0.18rem;
+    font-size: 0.16rem;
 }
 
-#houseList .row .item .col-xs-8 .price{
+#houseList .row .item .col-xs-8 .type{
     font-size: 0.12rem;
-    margin: 0.08rem 0;
-    color: #aaa;
+    margin: 0.02rem 0;
+    color: #666;
+    display: inline-block;
+    width: 100%;
 }
 
-#houseList .row .item .col-xs-8 .price span.pull-right{
+#houseList .biaoqian2 span.pull-right{
     color: #FF8C06;
     font-weight: bold;
     font-size: 0.16rem;
 }
-
+#houseList .biaoqian2 span.pull-right .text-big{
+    font-size: 1.2em;
+}
 
 #houseList .row .item .col-xs-8 .address{
     color: #666;
-    font-size: 0.14rem;
-    margin: 0.08rem 0;
-}
-
-#houseList .row .item .col-xs-8 .time span{
-    color: #aaa;
     font-size: 0.12rem;
+    margin: 0.02rem 0;
+    display: inline-block;
+    width: 100%;
 }
-
