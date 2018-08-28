@@ -18,7 +18,7 @@ picList.addEventListener("touchmove",function(event){
 //触摸结束
 picList.addEventListener("touchend",function(event){
     var diff = event.changedTouches[0].pageX-x;
-    if(Math.abs(diff)>screenWidth/2){
+    if(Math.abs(diff)>screenWidth/3){
         if(diff<0){
             //1.向左
             index++;

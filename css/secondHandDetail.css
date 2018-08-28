@@ -1,14 +1,14 @@
-section{
+section {
     overflow: hidden;
     background-color: #f5f5f5;
 }
 
-.contentBlock{
-    margin-bottom: 0.15rem;
+.contentHeader {
     background-color: white;
+    margin-bottom: 0.15rem;
 }
 
-#myCarousel{
+#myCarousel {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -52,7 +52,7 @@ section{
     background: white;
 }
 
-#currentIndex{
+#currentIndex {
     position: absolute;
     bottom: 0.1rem;
     right: 0.1rem;
@@ -65,95 +65,223 @@ section{
     font-size: 0.2rem;
 }
 
-#currentIndex span{
+#currentIndex span {
     color: white;
 }
 
-.detailHeader{
+.detailHeader {
     padding: 0.15rem;
     overflow: hidden;
 }
 
-.detailHeader h3{
+.detailHeader h3 {
     font-size: 0.19rem;
     color: #000000;
     margin: 0.1rem 0;
 }
 
-.detailHeader p{
+.detailHeader p {
     display: inline-block;
-}
-
-.detailHeader p:first-of-type{
-    color: #333;
-    overflow: hidden;
-    font-size: 0.14rem;
     width: 100%;
 }
 
-.detailHeader p:first-of-type img{
+.detailHeader p:first-of-type {
+    color: #333;
+    overflow: hidden;
+    font-size: 0.14rem;
+}
+
+.detailHeader p:first-of-type img {
     height: 0.2rem;
 }
 
-.detailHeader .price{
+.detailHeader .price {
     color: #DD4B3C;
     font-size: 0.2rem;
     font-weight: 800;
     margin-right: 0.05rem;
 }
 
-.detailHeader p:nth-of-type(2){
+.detailHeader p:nth-of-type(2) {
     color: #999;
     font-size: 0.12rem;
     margin: 0.1rem 0;
 }
 
-.detailHeader .biaoqian{
+.detailHeader .biaoqian {
     margin: 0.05rem 0;
 }
 
-#houseInfo div.container{
-    padding-right: 0;
+.more, .position {
+    padding: 0.15rem 0.15rem 0.15rem 0;
+    font-size: 0.14rem;
+}
+
+.more a {
+    color: #999999;
+}
+
+.contentBlock {
+    margin-bottom: 0.15rem;
+    background-color: white;
+    padding-left: 0.15rem;
+}
+
+#houseInfo div.container, #houseSchool div.container {
+    padding: 0;
     color: #333333;
 }
 
-#houseInfo ul.row{
+#houseInfo ul.row {
     margin-left: 0.05rem;
 }
 
-#houseInfo li.col-xs-12{
+#houseSchool ul.row {
+    margin: 0;
+}
+
+#houseInfo li.col-xs-12, #houseSchool li.col-xs-12 {
     border-bottom: 1px solid #eeeeee;
     padding: 0;
 }
 
-#houseInfo li.col-xs-12 p.col-xs-6,#houseInfo li.col-xs-12 p.col-xs-12{
-    padding: 0.15rem 0;
+#houseInfo li.col-xs-12 p.col-xs-6,
+#houseInfo li.col-xs-12 p.col-xs-12,
+#houseSchool li.col-xs-12 p.col-xs-12 {
+    padding: 0.15rem 0.15rem 0.15rem 0;
     font-size: 0.14rem;
 }
 
 #houseInfo li.col-xs-12 p.col-xs-6 span:first-of-type,
-#houseInfo li.col-xs-12 p.col-xs-12 span:first-of-type{
+#houseInfo li.col-xs-12 p.col-xs-12 span:first-of-type,
+#houseSchool li.col-xs-12 p.col-xs-12 span:first-of-type {
     color: #aaa;
 }
 
-#houseInfo li.col-xs-12 p.col-xs-12 a{
+#houseInfo li.col-xs-12 p.col-xs-12 span,
+#houseSchool li.col-xs-12 p.col-xs-12 span {
+    padding-left: 0;
+}
+
+#houseInfo li.col-xs-12 p.col-xs-12 a {
     position: absolute;
     right: 0.3rem;
     top: 0.15rem;
 }
 
-#houseInfo li.col-xs-12 p.col-xs-12 a img{
+#houseInfo li.col-xs-12 p.col-xs-12 a img {
     height: 0.12rem;
 }
 
-.houseInfoMore{
-    padding: 0.15rem 0;
+.contentBlock > h4 {
+    border-bottom: 1px solid #eeeeee;
+    font-size: 0.145rem;
+    padding: 0.1rem 0;
+}
+
+.contentBlock h4.color {
+    color: #FF8600;
+}
+
+#houseFeature p.houseFeatureInfo {
+    padding: 0.1rem 0.1rem 0.1rem 0;
+    font-size: 0.12rem;
+    color: #333;
+    line-height: 0.2rem;
+    border-bottom: 1px solid #eeeeee;
+    height: 1rem;
+    overflow: hidden;
+}
+
+#houseType .container, #houseType .row .item .col-xs-3, #recommend .container {
+    padding: 0;
+}
+
+#houseType .container .row, #recommend .container .row {
+    margin: 0;
+}
+
+#houseType .row .item, #recommend .row .item {
+    padding: 0.15rem 0.15rem 0.15rem 0;
+    color: #000;
+}
+
+#houseType .row hr {
+    width: 100%;
+    border-color: #FF8C06;
+}
+
+#houseType .row .item .col-xs-9 {
+    padding-right: 0;
+}
+
+#houseType .row .item .col-xs-9 h4, #recommend .row .item .col-xs-8 h4 {
+    font-size: 0.16rem;
+}
+
+#houseType .row .item .col-xs-9 .typeInfo {
+    color: #666;
+    font-size: 0.12rem;
+    margin: 0.08rem 0;
+    height: 0.24rem;
+}
+
+#map{
+    width: 100%;
+    height: 2rem;
+}
+
+#recommend .row hr {
+    width: 100%;
+}
+
+#recommend .row .item .col-xs-4 {
+    padding-left: 0;
+}
+
+#recommend .row .item .col-xs-8 {
+    padding: 0;
+}
+
+#recommend .row .item .col-xs-8 .type {
     font-size: 0.14rem;
+    margin: 0.08rem 0;
 }
 
-.houseInfoMore a{
-    color: #999999;
+#recommend .row .item .col-xs-8 .type span {
+    color: #FF8C06;
+    font-weight: bold;
 }
 
+#recommend .row .item .col-xs-8 .address {
+    color: #555;
+    font-size: 0.12rem;
+    margin: 0.08rem 0;
+}
 
+.prompt {
+    margin: 0.15rem 0 0.1rem 0;
+    position: relative;
+    background-color: #F2F2F2;
+    padding: 0.05rem;
+}
 
+.prompt .prompt_content{
+    font-size: 0.12rem;
+    color: #666;
+}
+
+.prompt .arrow:before,
+.prompt .arrow:after {
+    content: "";
+    position: absolute;
+}
+
+.prompt .arrow:before {
+    left: 0.05rem;
+    top: -0.06rem;
+    margin-top: -2.5px;
+    border-left: 0.09rem solid transparent;
+    border-right: 0.09rem solid transparent;
+    border-bottom: 0.09rem solid #F2F2F2;
+}
