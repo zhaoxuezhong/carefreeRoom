@@ -1,4 +1,21 @@
 
+var t=setInterval("f()",5050);
+function f() {
+    var ele=myCarousel.getElementsByClassName("carousel-indicators")[0].getElementsByClassName("active")[0];
+    var to=parseInt(ele.getAttribute("data-slide-to"))+1;
+    currentIndex.getElementsByTagName("span")[0].innerHTML=to;
+}
+
+Zepto(function ($) {
+    $("#myCarousel a.carousel-control,#myCarousel .carousel-indicators li").tap(function () {
+        clearInterval(t);
+        f();
+        t=setInterval("f()",5050);
+    })
+});
+
+/*
+
 //变量定义区
 var x = 0;//保存开始的x的坐标值
 var screenWidth = window.screen.availWidth;//设备屏幕宽度
@@ -60,4 +77,4 @@ Zepto(function ($) {
         moveTo(-index*screenWidth);
     })
 
-});
+});*/
