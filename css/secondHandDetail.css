@@ -291,13 +291,12 @@ section {
     padding: 0 0.15rem;
     display: flex;
     box-shadow: 0 -1px 10px -3px #555555;
-    height: 50px;
-    line-height: 50px;
+    height: 0.5rem;
+    line-height: 0.5rem;
 }
 
 #agent div.left{
     flex: 2;
-    padding-right: 0.1rem;
 }
 
 #agent div.left button.btn{
@@ -319,19 +318,26 @@ section {
     text-align: center;
 }
 
+#agent div.right a{
+    display: inline-block;
+}
+
 #agent div.right a img{
-    width: 0.25rem;
-    height: auto;
+    width: 0.18rem;
+    height: 0.16rem;
     vertical-align: middle;
 }
 
 #agent div.right a span{
-    font-size: 0.18rem;
-    font-weight: bold;
+    font-size: 0.14rem;
+    color: #999999;
     display: inline-block;
-    margin-left: 0.03rem;
+    vertical-align: bottom;
 }
 
+#agent div.right a.active span{
+    color: #FF8C06;
+}
 
 
 

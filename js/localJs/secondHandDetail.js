@@ -12,6 +12,11 @@ Zepto(function ($) {
         f();
         t=setInterval("f()",5050);
     })
+
+    $("#agent .right a").tap(function () {
+        $(this).toggleClass("active");
+    })
+
 });
 
 /*
